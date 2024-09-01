@@ -10,10 +10,12 @@
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_oktwn")
 DECEL = 1200
+fastFallRate = 4.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+scale = Vector2(2.2, 2.2)
 shape = SubResource("RectangleShape2D_8622m")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-scale = Vector2(0.167969, 0.167969)
+scale = Vector2(0.35, 0.359)
 texture = ExtResource("2_j7t4n")
