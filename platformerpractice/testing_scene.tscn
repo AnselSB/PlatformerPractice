@@ -1,12 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://ccw10a6i6oigs"]
 
 [ext_resource type="PackedScene" uid="uid://dj6wt5vfdpsxo" path="res://protagonist.tscn" id="1_kibei"]
+[ext_resource type="PackedScene" uid="uid://bd267pap1ebch" path="res://moving_plat.tscn" id="2_kbyqn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1q8hl"]
 size = Vector2(1168, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vlcad"]
-size = Vector2(25, 267)
 
 [node name="testingScene" type="Node"]
 
@@ -19,8 +17,5 @@ shape = SubResource("RectangleShape2D_1q8hl")
 [node name="Protagonist" parent="." instance=ExtResource("1_kibei")]
 position = Vector2(71, 363)
 
-[node name="marker" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="marker"]
-position = Vector2(759, 457)
-shape = SubResource("RectangleShape2D_vlcad")
+[node name="movingPlat" parent="." instance=ExtResource("2_kbyqn")]
+position = Vector2(661, 532)
